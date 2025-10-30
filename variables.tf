@@ -4,15 +4,11 @@
 variable "region" {
   description = "AWS region for all resources."
   type        = string
-  default     = "us-east-2"
+  default     = "us-east-1"
 }
 
-variable "db_name" {
-  description = "Unique name to assign to RDS instance."
+variable "name" {
+  description = "Resource name prefix"
   type        = string
-}
-
-variable "db_username" {
-  description = "RDS root username."
-  type        = string
+  default     = "default"
 }
